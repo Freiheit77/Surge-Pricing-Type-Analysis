@@ -24,6 +24,15 @@ The cab aggregator service is popular nowadays and users could download their ap
 3. LightGBM
 4. XGBoost
 
-## Model selection methods
-1. StratifiedKFold
+## Cross validation methods
+1. StratifiedKFold:
+       
+       1) The folds are selected so that the mean response value is approximately equal in all the folds. 
+       2) The StratifiedKFold is used in classification problems, which means the estimator is a classifier and y is either binary or multiclass.
+       
 2. KFold
+
+       1) It could be used in both classification and regression problems.
+       
+       
+
