@@ -34,7 +34,7 @@ The cab aggregator service is popular nowadays and users could download their ap
        2) Light GBM grows tree leaf-wise while other algorithm grows level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf, Leaf-wise algorithm can reduce more loss than a level-wise algorithm. 
        3) Light GBM can handle the large size of data and takes lower memory to run. (faster than XGBoost)
        4) It is not suggested for small datasets (fewer than 10k rows). Light GBM is sensitive to overfitting and can easily overfit small data.
-      ![alt text](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/pictures/tree%20growth_leaf-wise%20and%20level-wise.png)
+      ![alt text](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/pictures/leaf-wise%20vs%20level-wise.png)
 
 5. [Parameter tuning](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/pictures/XGBoost%20vs%20CatBoost%20vs%20LightGBM.png)
       
