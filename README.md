@@ -19,9 +19,16 @@ The cab aggregator service is popular nowadays and users could download their ap
 
        1) It supports multiple Categories of data, such as audio, text, image including historical data and could handel them automatically. We can use CatBoost without any explicit pre-processing to convert categories into numbers. CatBoost converts categorical values into numbers using various statistics on combinations of categorical features and combinations of categorical and numerical features.  
        2) CatBoost does not require conversion of data set to any specific format like XGBoost and LightGBM.
-       3) It reduces the need for extensive hyperparameter tuning and lower the chances of overfitting also which leads to more generalized models. 
+       3) It reduces the need for extensive hyperparameter tuning and lower the chances of overfitting also which leads to more generalized models.
        
 3. LightGBM
+       
+       1) Light GBM is a gradient boosting framework that uses tree based learning algorithm.
+       2) Light GBM grows tree leaf-wise while other algorithm grows level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf, Leaf-wise algorithm can reduce more loss than a level-wise algorithm. ![alt text](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/tree%20growth_leaf-wise%20and%20level-wise.png)
+       3) Light GBM can handle the large size of data and takes lower memory to run. 
+       4) It is not suggested for small datasets (fewer than 10k rows). Light GBM is sensitive to overfitting and can easily overfit small data.
+       [reference blog](https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc]
+       
 4. XGBoost
 
 ## Cross validation methods
