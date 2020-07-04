@@ -1,4 +1,4 @@
-# Surge-Pricing-Type-Analysis
+# Surge Pricing Type Analysis
 The cab aggregator service is popular nowadays and users could download their app on smartphones and book a cab from anywhere in the cities they operate in. The app will search for cabs from various service providers and provide the best option to their client across available options. The project aims to build the predictive model to help determine the surge pricing type for each trip each based on their characteristics. It could help to allocate resources effectively and improve the transportation efficiency.  
 
 ## Data description 
@@ -12,8 +12,7 @@ The cab aggregator service is popular nowadays and users could download their ap
 1. Random forest (based on data by naive imputation; based on data by knn imputation)
 
        1）These two datasets gave almost the same OOS accuracy. 
-       2) The top 3 important features in both forests were Trip_Distance, Customer_Rating and Life_Style_Index.
-       3) Half of the data were missing in 'Var1' variable and its feature importance increased in the model underlying knn imputation. 
+       3) Half of the data were missing in 'Var1' variable and its feature importance increased in the model underlying knn imputation than naive imputation. 
 
 2. CatBoostClassifier 
 
@@ -37,7 +36,7 @@ The cab aggregator service is popular nowadays and users could download their ap
       ![alt text](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/pictures/leaf-wise%20vs%20level-wise.png)
 
 5. [Parameter tuning](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/pictures/XGBoost%20vs%20CatBoost%20vs%20LightGBM.png)
-      
+
 ## Cross validation methods
 1. StratifiedKFold:
        
@@ -48,6 +47,10 @@ The cab aggregator service is popular nowadays and users could download their ap
 
        1) It could be used in both classification and regression problems.
        
+## Result 
+1. The top 3 important features in these algorithms were Trip_Distance, Customer_Rating and Life_Style_Index.
+2. Model comparison: 
+
        
 
 ### Reference
