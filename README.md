@@ -24,11 +24,12 @@ The cab aggregator service is popular nowadays and users could download their ap
 3. LightGBM
        
        1) Light GBM is a gradient boosting framework that uses tree based learning algorithm.
-       2) Light GBM grows tree leaf-wise while other algorithm grows level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf, Leaf-wise algorithm can reduce more loss than a level-wise algorithm. ![alt text](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/tree%20growth_leaf-wise%20and%20level-wise.png)
+       2) Light GBM grows tree leaf-wise while other algorithm grows level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf, Leaf-wise algorithm can reduce more loss than a level-wise algorithm. 
        3) Light GBM can handle the large size of data and takes lower memory to run. 
        4) It is not suggested for small datasets (fewer than 10k rows). Light GBM is sensitive to overfitting and can easily overfit small data.
-       [reference blog](https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc]
-       
+      [reference blog](https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc]
+      ![alt text](https://github.com/Freiheit77/Surge-Pricing-Type-Analysis/blob/master/tree%20growth_leaf-wise%20and%20level-wise.png)
+      
 4. XGBoost
 
 ## Cross validation methods
