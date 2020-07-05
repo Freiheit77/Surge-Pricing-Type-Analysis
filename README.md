@@ -12,7 +12,7 @@ The cab aggregator service is popular nowadays and users could download their ap
 1. Random forest (based on data by naive imputation; based on data by knn imputation)
 
        1）These two datasets gave almost the same OOS accuracy. 
-       3) Half of the data were missing in 'Var1' variable and its feature importance increased in the model underlying knn imputation than naive imputation. 
+       2) Half of the data were missing in 'Var1' variable and its feature importance increased in the model underlying knn imputation than naive imputation. 
 
 2. CatBoostClassifier 
 
